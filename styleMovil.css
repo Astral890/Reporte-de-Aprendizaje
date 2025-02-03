@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(30, 54%, 90%);
+    color: hsl(30, 10%, 34%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Simulación de aplicación móvil */
+.app-container {
+    background-color: hsl(0, 0%, 100%);
+    width: 100%;
+    max-width: 430px; /* Tamaño típico de un teléfono */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    min-height: 100vh;
+}
+
+/* Imagen */
+.recipe-image {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* Títulos */
+h1 {
+    font-family: 'Young Serif', serif;
+    font-size: 24px;
+    color: hsl(24, 5%, 18%);
+}
+
+h2 {
+    font-family: 'Young Serif', serif;
+    font-size: 20px;
+    color: hsl(14, 45%, 36%);
+}
+
+/* Descripción */
+.description {
+    font-size: 16px;
+    color: hsl(30, 10%, 34%);
+    margin-bottom: 15px;
+}
+
+/* Caja de tiempo de preparación */
+.prep-time {
+    background-color: hsl(330, 100%, 98%);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.prep-time h2 {
+    font-size: 18px;
+    color: hsl(332, 51%, 32%);
+}
+
+.prep-time ul {
+    list-style: none;
+    padding: 0;
+}
+
+.prep-time ul li {
+    font-size: 16px;
+    padding: 5px 0;
+}
+
+/* Listas */
+ul, ol {
+    padding-left: 20px;
+}
+
+ul li, ol li {
+    font-size: 16px;
+    padding: 5px 0;
+}
+
+/* Instrucciones */
+ol li strong {
+    color: hsl(14, 45%, 36%);
+}
+
+/* Numeración en negrita */
+ol li {
+    font-weight: 600;
+}
+
+/* Tabla de nutrición */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: hsl(330, 100%, 98%);
+    color: hsl(332, 51%, 32%);
+    font-weight: 600;
+}
+
+/* Estilos móviles */
+@media (max-width: 480px) {
+    .app-container {
+        width: 100%;
+        max-width: 375px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .prep-time ul li, ul li, ol li {
+        font-size: 14px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
